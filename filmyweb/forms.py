@@ -1,8 +1,8 @@
- from django.forms import ModelForm
- from .models import Film
+from django.forms import ModelForm
+from .models import Film
 
- class FilmForm(ModelForm):
-     class Meta:
-         model = Film
-         fields = ['tytyl','opis','premiera','rok','imdb_rating','plakat']
+class FilmForm(ModelForm):
+    class Meta:
+        model = Film
+        fields = ['tytul','opis','premiera','rok','imdb_rating','plakat']
          #First release - checking

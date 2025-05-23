@@ -1,0 +1,15 @@
+{% extends 'glowny.html' %}
+{% load bootstrap %}
+{% block tytul %} Potwierdź {% endblock %}
+
+{% block strona %}
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h2 class="text-danger mb-4">Czy na pewno chcesz usunąć film: <strong>"{{ film.tytul }}"</strong>?</h2>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">🗑 Usuń film</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'glowny.html' %}
+{% load bootstrap %}
+{% block  tytul %} Wyloguj się {% endblock %}
+
+{% block  strona %}
+    <form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">logout</button>
+    </form>
+{% endblock %}

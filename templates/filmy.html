@@ -1,23 +1,59 @@
-{% load static %}
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link  rel=" stylesheet" href="{% static 'nowy.css' %}" >
-    <link   >
-</head>
-<body>
+{% extends 'glowny.html' %}
 
-    <h2> Ilosc filmow w bazie danych -> {{filmy|length}}</h2>
+{% block  tytul %} Lista filmow {% endblock %}
 
-    {% for film in filmy %}
-        <h3>{{ film }}</h3>
-        <p>{{ film.opis }}</p>
-    {% endfor %}
+{% block  strona %}
 
-</body>
-</html>
+
+<div class="p-4 shadow-4 rounded-3" style="background-color: hsl(0, 0%, 94%);">
+    {% if user.is_authenticated %}
+    <h2>WITAM : {{ user.username }}</h2>
+     <a type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary"
+         href="{% url 'logout' %}">Wyloguj
+    </a>
+
+    {% else %}
+    <a href="{% url 'login' %}">Login</a>
+
+    {% endif %}
+
+
+    <hr class="my-4"/>
+
+
+    <a type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary"
+         href="{% url 'nowy_film' %}">Nowy film
+    </a>
+</div>
+
+
+<hr>
+
+
+<!--<h2>Ilość filmów w bazie danych → {{ filmy|length }}</h2>-->
+
+{% for film in filmy %}
+<div class="card" style="width: 32rem;">
+    <div class="card-body">
+        <img src="/media/{{ film.plakat }}"class="film-plakat">
+        <div class="row">
+            <div class="col-9">
+                <h5 class="card-title">{{ film }}</h5>
+            </div>
+            <div class="col-3">
+                <a href="{% url 'edytuj_film' film.id %}"> <i class="fa-solid fa-2x fa-file-pen"></i></a>
+                <a href="{% url 'usun_film' film.id %}"> <i class="fa-solid fa-2x fa-trash"></i></a>
+            </div>
+
+            <div class="row">
+                <h6 class="card-subtitle mb-2 text-body-secondary">{{ film.opis }}</h6>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+{% endfor %}
+{% endblock %}

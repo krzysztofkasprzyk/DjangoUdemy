@@ -1,0 +1,18 @@
+{% extends 'glowny.html' %}
+{% load bootstrap %}
+{% block  tytul %} Logowanie {% endblock %}
+
+{% block  strona %}
+
+        <div class="card" style="width: 28rem;">
+          <div class="card-body">
+            <h5 class="card-title">Zaloguj się</h5>
+            <i class="fa-solid fa-house fa-beat-fade"></i>
+            <form method="post">
+                {% csrf_token %}
+                {{ form|bootstrap }}
+            <button class="btn btn-success" type="submit">Zaloguj <i class="fa-solid fa-right-to-bracket"></i ></button>
+            </form>
+          </div>
+        </div>
+{% endblock %}

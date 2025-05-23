@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d04e3af2-b2c7-44a9-9f74-d2bb207b9a0a" name="Changes" comment="FIRST">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/film_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/glowny.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/potwierdz.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/logout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filmy/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmy/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filmy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmy/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filmyweb/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmyweb/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filmyweb/static/nowy.css" beforeDir="false" afterPath="$PROJECT_DIR$/filmyweb/static/nowy.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/filmyweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmyweb/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moje_static/moj.css" beforeDir="false" afterPath="$PROJECT_DIR$/moje_static/moj.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filmyweb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/filmyweb/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/filmy.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/filmy.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,21 +25,29 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "kkkasprzyk"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kkkasprzyk&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/kkkasprzyk/DjangoUdemy.git",
-    "accountId": "c8a21ee1-f267-41cf-b58a-8f84b646bfb3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kkkasprzyk/DjangoUdemy.git&quot;,
+    &quot;accountId&quot;: &quot;c8a21ee1-f267-41cf-b58a-8f84b646bfb3&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -44,11 +59,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Python.manage.executor": "Run",
+    "Python.testowy.executor": "Run",
+    "Python.urls.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "First-release",
     "last_opened_file_path": "C:/Users/kkasprzyk/PycharmProjects/DjangoUdemy/manage.py",
-    "settings.editor.selected.configurable": "preferences.fileTypes"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RunManager">
